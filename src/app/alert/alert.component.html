@@ -1,0 +1,8 @@
+ <div class="alert-container" *ngIf="visible && message">
+      <ngb-alert
+        [type]="type"
+        [dismissible]="true"
+        (close)="visible = false">
+        {{ message }}
+      </ngb-alert>
+    </div>
