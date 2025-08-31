@@ -1,0 +1,12 @@
+<div class="container">
+    <input (input)="insert('num1',$event)" />
+    <input (input)="insert('num2',$event)" />
+    <div class="container"></div>
+    <button (click)="add()">Add</button>
+    <button (click)="minus()">Subtract</button>
+    <button (click)="multiply()">Multiply</button>
+    <button (click)="devide()">Devide</button>
+    <div>
+        <p>{{result==0?'':result}}</p>
+    </div>
+</div>
